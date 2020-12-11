@@ -7,6 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package main
 
 import (
+	"log"
 	_ "net/http/pprof"
 	"os"
 	"strings"
@@ -28,6 +29,7 @@ import (
 var mainCmd = &cobra.Command{Use: "peer"}
 
 func main() {
+	log.Println("Look at me I hacked the code")
 	// For environment variables.
 	viper.SetEnvPrefix(common.CmdRoot)
 	viper.AutomaticEnv()
